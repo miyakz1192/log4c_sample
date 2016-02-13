@@ -1,0 +1,19 @@
+1) make /etc/ld.so.conf.d/log4c.conf
+
+vim /etc/ld.so.conf.d/log4c.conf
+
+---
+/usr/local/lib
+---
+
+2) do ldconfig
+
+/sbin/ldconfig 
+
+3) compile it
+
+gcc log4c_sample.c  -llog4c -o log4c_sample
+
+4) copy  log4crc to ~/.log4crc
+
+cp ./log4crc ~/.log4crc
